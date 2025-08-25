@@ -10,7 +10,7 @@ La empresa utiliza Spring Boot y JUnit 5 como stack principal de desarrollo y te
 
 A continuación, se detallan los aspectos clave a validar para cada uno de los endpoints de la API de gestión de clientes.
 
-### ### POST /clientes
+### POST /clientes
 
 *   **Propósito:** Crear un nuevo cliente.
 *   **Aspectos Clave a Testear:**
@@ -21,7 +21,7 @@ A continuación, se detallan los aspectos clave a validar para cada uno de los e
         *   `400 Bad Request` si se envía un cuerpo de petición inválido (ej. campos obligatorios faltantes).
         *   `409 Conflict` si se intenta crear un cliente con un email que ya existe.
 
-### ### GET /clientes/{id}
+### GET /clientes/{id}
 
 *   **Propósito:** Obtener los datos de un cliente específico.
 *   **Aspectos Clave a Testear:**
@@ -31,7 +31,7 @@ A continuación, se detallan los aspectos clave a validar para cada uno de los e
     *   **Casos de error:**
         *   `404 Not Found` si se solicita un cliente con un `id` que no existe.
 
-### ### DELETE /clientes/{id}
+### DELETE /clientes/{id}
 
 *   **Propósito:** Eliminar un cliente existente.
 *   **Aspectos Clave a Testear:**
@@ -43,13 +43,13 @@ A continuación, se detallan los aspectos clave a validar para cada uno de los e
 
 ## 2. Estrategia de Automatización y Herramientas Seleccionadas
 
-### ### Librerías Utilizadas
+### Librerías Utilizadas
 
 *   **Rest-Assured:** Se elige como la librería principal para interactuar con la API. Su sintaxis fluida y legible, basada en el patrón **Given-When-Then**, simplifica enormemente la creación de peticiones HTTP y la validación de sus respuestas.
 *   **JUnit 5:** Es el framework de testing seleccionado para estructurar, organizar y ejecutar los casos de prueba. Sus anotaciones (`@Test`, `@BeforeAll`, etc.) permiten un control claro sobre el ciclo de vida de las pruebas.
 *   **Hamcrest:** Utilizado de forma implícita por Rest-Assured para las aserciones (`.body()`). Provee *matchers* declarativos y legibles como `equalTo()`, `notNullValue()`, y `containsString()`.
 
-### ### Patrones de Diseño y Organización
+### Patrones de Diseño y Organización
 
 *   **Test por Escenario:** Cada método `@Test` se enfoca en validar un único comportamiento o escenario (ej. "crear un cliente válido", "consultar un cliente inexistente"). Esto mejora la claridad y facilita la depuración.
 *   **Configuración Centralizada:** Se utiliza el método `@BeforeAll` de JUnit 5 para establecer la configuración base (como la `baseURI`) una sola vez por clase, evitando la duplicación de código.
@@ -137,5 +137,6 @@ Las aserciones actúan como un **contrato digital**. El caso inicial que motivó
 *   **Documentación Viva:** Un conjunto de pruebas bien escritas sirve como la documentación más fiable y actualizada del comportamiento esperado de la API. Un nuevo desarrollador puede leer las pruebas para entender qué esperar de cada endpoint.
 *   **Consistencia y Previsibilidad:** Garantizan que la API se comporte de manera consistente a lo largo del tiempo, algo esencial para los consumidores de la misma (ya sean aplicaciones frontend u otros servicios).
 *   **Eficiencia del Equipo de QA:** Al automatizar estas verificaciones fundamentales, el equipo de QA puede dedicar su valioso tiempo a pruebas más complejas y de mayor impacto, como las exploratorias, de seguridad o de rendimiento.
+
 
 En resumen, la inversión en un framework de pruebas automatizadas con aserciones detalladas se traduce directamente en un producto de **mayor calidad**, un ciclo de desarrollo más **rápido** y una reducción significativa de los **errores en producción**.
