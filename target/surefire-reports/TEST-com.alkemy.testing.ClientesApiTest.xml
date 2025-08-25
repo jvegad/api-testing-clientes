@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.alkemy.testing.ClientesApiTest" time="8.629" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\josse\Desktop\JAVA\api-testing-clientes\target\test-classes;C:\Users\josse\Desktop\JAVA\api-testing-clientes\target\classes;C:\Users\josse\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\josse\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\josse\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\josse\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\josse\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\josse\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\josse\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\josse\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\josse\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\josse\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\josse\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\josse\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\josse\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\josse\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\josse\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\josse\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\josse\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\josse\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\josse\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\josse\.m2\repository\org\assertj\assertj-core\3.23.1\assertj-core-3.23.1.jar;C:\Users\josse\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Punta_Arenas"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CL"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\josse\AppData\Local\Temp\surefire199175441866947955\surefirebooter-20250825193959840_3.jar C:\Users\josse\AppData\Local\Temp\surefire199175441866947955 2025-08-25T19-39-59_358-jvmRun1 surefire-20250825193959840_1tmp surefire_0-20250825193959840_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\josse\Desktop\JAVA\api-testing-clientes\target\test-classes;C:\Users\josse\Desktop\JAVA\api-testing-clientes\target\classes;C:\Users\josse\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\josse\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\josse\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\josse\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\josse\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\josse\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\josse\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\josse\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\josse\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\josse\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\josse\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\josse\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\josse\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\josse\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\josse\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\josse\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\josse\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\josse\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\josse\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\josse\.m2\repository\org\assertj\assertj-core\3.23.1\assertj-core-3.23.1.jar;C:\Users\josse\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\josse"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\josse\Desktop\JAVA\api-testing-clientes"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\josse\AppData\Local\Temp\surefire199175441866947955\surefirebooter-20250825193959840_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="josse"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\josse\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\josse\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="C:\Users\josse\Desktop\JAVA\api-testing-clientes"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-24\bin;C:\Program Files\Java\apache-maven-3.9.10\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\WireGuard\;C:\Program Files\Graphviz\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\josse\AppData\Local\Microsoft\WindowsApps;C:\Users\josse\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\josse\AppData\Roaming\Composer\vendor\bin;C:\php;C:\Program Files\Java\jdk-24\bin;C:\Program Files\Java\apache-maven-3.9.10\bin;C:\Users\josse\AppData\Roaming\npm;C:\Users\josse\AppData\Local\Programs\Ollama;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="alCrearUnRecursoConDatosValidos_deberiaDevolver201YElRecursoCreado" classname="com.alkemy.testing.ClientesApiTest" time="6.594">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/posts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Mi post de prueba",
+    "body": "Este es el contenido del post.",
+    "userId": 1
+}
+HTTP/1.1 201 Created
+Date: Mon, 25 Aug 2025 22:40:08 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 106
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Expose-Headers: Location
+Cache-Control: no-cache
+Etag: W/"6a-KLY5cFyMdOkqmaRC/IX5KBvfx48"
+Expires: -1
+Location: https://jsonplaceholder.typicode.com/posts/101
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=u%2FWwJfHNXaJjV2g0KlY3BsAaF7gh9sVCHBF4vXwNrKU%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1756161608"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=u%2FWwJfHNXaJjV2g0KlY3BsAaF7gh9sVCHBF4vXwNrKU%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1756161608"
+Server: cloudflare
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Via: 2.0 heroku-router
+X-Content-Type-Options: nosniff
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1756161657
+Cf-Cache-Status: DYNAMIC
+CF-RAY: 974e96e6781e3f3a-EZE
+alt-svc: h3=":443"; ma=86400
+
+{
+    "title": "Mi post de prueba",
+    "body": "Este es el contenido del post.",
+    "userId": 1,
+    "id": 101
+}
+]]></system-out>
+  </testcase>
+  <testcase name="alConsultarUnClienteExistente_deberiaDevolver200YLosDatosCorrectos" classname="com.alkemy.testing.ClientesApiTest" time="0.422">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://jsonplaceholder.typicode.com/posts/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 25 Aug 2025 22:40:11 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Cache-Control: max-age=43200
+Etag: W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Expires: -1
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=3ig47BLk4aWJ8v22zg2M17sbo1vj3uV1ZqjkVvzqABE%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1754033457"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=3ig47BLk4aWJ8v22zg2M17sbo1vj3uV1ZqjkVvzqABE%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1754033457"
+Server: cloudflare
+Vary: Origin, Accept-Encoding
+Via: 2.0 heroku-router
+X-Content-Type-Options: nosniff
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1754033466
+Age: 1750
+Cf-Cache-Status: HIT
+Content-Encoding: gzip
+CF-RAY: 974e96f66d001f0d-EZE
+alt-svc: h3=":443"; ma=86400
+
+{
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="alEliminarUnClienteExistente_deberiaDevolver200" classname="com.alkemy.testing.ClientesApiTest" time="0.41">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://jsonplaceholder.typicode.com/posts/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 25 Aug 2025 22:40:11 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Expires: -1
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=sqFEU4pV5aSlSLU61IJBSt7SEQLJHSYfdNj8BqG%2Fpc8%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1756161611"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=sqFEU4pV5aSlSLU61IJBSt7SEQLJHSYfdNj8BqG%2Fpc8%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1756161611"
+Server: cloudflare
+Vary: Origin, Accept-Encoding
+Via: 2.0 heroku-router
+X-Content-Type-Options: nosniff
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 998
+X-Ratelimit-Reset: 1756161657
+Cf-Cache-Status: DYNAMIC
+Content-Encoding: gzip
+CF-RAY: 974e96f85c4f9d5e-EZE
+alt-svc: h3=":443"; ma=86400
+
+{
+    
+}
+]]></system-out>
+  </testcase>
+</testsuite>
